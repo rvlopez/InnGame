@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".presentation.MainActivity">
+
+    <include layout="@layout/timer_layout" />
+
+    <include layout="@layout/resources_layout" />
+
+    <include layout="@layout/recycler_view_layout" />
+
+    <include layout="@layout/building_layout" />
+
+</LinearLayout>
