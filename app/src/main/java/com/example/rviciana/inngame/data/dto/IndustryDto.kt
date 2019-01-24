@@ -1,6 +1,7 @@
 package com.example.rviciana.inngame.data.dto
 
 data class IndustryDto(
-        val level: Int,
-        val craftCost: Int
+        var level: Int,
+        var craftCost: CraftCostDto,
+        var resourcesDto: ResourcesDto
 )

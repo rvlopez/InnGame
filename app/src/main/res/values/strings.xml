@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InnGame</string>
+
+    <string name="metal_init_value">1500</string>
+    <string name="fibre_init_value">600</string>
+    <string name="gasoline_init_value">0</string>
+    <string name="factory_init_level">Industry level 1</string>
 </resources>

@@ -6,11 +6,9 @@
     android:background="@color/light_black"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".presentation.MainActivity">
+    tools:context=".presentation.IndustryActivity">
 
-    <include layout="@layout/timer_layout" />
-
-    <include layout="@layout/resources_layout" />
+    <include layout="@layout/board_layout" />
 
     <include layout="@layout/recycler_view_layout" />
 

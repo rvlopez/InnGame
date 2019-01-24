@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_black"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/clock"
+        tools:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        style="@style/ClockTheme"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/clockAnimation"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/blue_clock"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/industryLvl"
+        tools:text="Industry level 1"
+        android:text="@string/factory_init_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="10dp"
+        style="@style/ClockTheme" />
+
+    <LinearLayout
+        android:id="@+id/resourcesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/industryLvl"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="1dp"
+                android:src="@drawable/mineral"
+                android:background="@drawable/resource_icon_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/metal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/metal_init_value"
+                style="@style/ResourcePanel"
+                tools:text="10.000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="1dp"
+                android:src="@drawable/thread"
+                android:background="@drawable/resource_icon_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/fibre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fibre_init_value"
+                style="@style/ResourcePanel"
+                tools:text="10.000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="1dp"
+                android:background="@drawable/resource_icon_background"
+                android:src="@drawable/oil"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/gasoline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gasoline_init_value"
+                style="@style/ResourcePanel"
+                tools:text="10.000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

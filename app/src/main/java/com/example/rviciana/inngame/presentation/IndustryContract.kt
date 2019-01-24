@@ -1,5 +1,6 @@
 package com.example.rviciana.inngame.presentation
 
+import com.example.rviciana.inngame.domain.bo.Industry
 import com.example.rviciana.inngame.domain.bo.Resources
 import com.example.rviciana.inngame.domain.bo.Trailer
 
@@ -14,6 +15,7 @@ interface IndustryContract {
     }
 
     interface Presenter {
+        fun setView(view: IndustryContract.View)
         fun onViewReady()
         fun onStop()
     }
